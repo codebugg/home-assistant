@@ -1,0 +1,7 @@
+door_bell_alexa:
+  sequence:
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.office_echo
+        media_content_type: sound
+        media_content_id: amzn_sfx_doorbell_chime_01

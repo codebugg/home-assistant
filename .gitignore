@@ -3,6 +3,7 @@
 *
 
 # You can whitelist files/folders with !, these will not be ignored.
+!*/
 !*.yaml
 !*.yml
 !.gitignore
@@ -10,7 +11,7 @@
 !.gitkeep
 !auth
 !automations
-!custom_components
+!custom_components/**
 !customizations
 !deps
 !entities
@@ -22,11 +23,20 @@
 !themes
 !www
 
+# Generic ignores
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
 
 # Ignore folders.
 .storage
 .cloud
 .google.token
+node-red
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
